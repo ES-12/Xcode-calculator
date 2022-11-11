@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CEAAEAA2291AB18F00FB090F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAAEAA1291AB18F00FB090F /* AppDelegate.swift */; };
 		CEAAEAA4291AB18F00FB090F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAAEAA3291AB18F00FB090F /* SceneDelegate.swift */; };
-		CEAAEAA6291AB18F00FB090F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAAEAA5291AB18F00FB090F /* ViewController.swift */; };
+		CEAAEAA6291AB18F00FB090F /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAAEAA5291AB18F00FB090F /* Calculate.swift */; };
 		CEAAEAA9291AB18F00FB090F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAAEAA7291AB18F00FB090F /* Main.storyboard */; };
 		CEAAEAAB291AB19200FB090F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAAEAAA291AB19200FB090F /* Assets.xcassets */; };
 		CEAAEAAE291AB19200FB090F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAAEAAC291AB19200FB090F /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		CEAAEA9E291AB18F00FB090F /* calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEAAEAA1291AB18F00FB090F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEAAEAA3291AB18F00FB090F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEAAEAA5291AB18F00FB090F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEAAEAA5291AB18F00FB090F /* Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 		CEAAEAA8291AB18F00FB090F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEAAEAAA291AB19200FB090F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEAAEAAD291AB19200FB090F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				CEAAEAA1291AB18F00FB090F /* AppDelegate.swift */,
 				CEAAEAA3291AB18F00FB090F /* SceneDelegate.swift */,
-				CEAAEAA5291AB18F00FB090F /* ViewController.swift */,
+				CEAAEAA5291AB18F00FB090F /* Calculate.swift */,
 				CEAAEAA7291AB18F00FB090F /* Main.storyboard */,
 				CEAAEAAA291AB19200FB090F /* Assets.xcassets */,
 				CEAAEAAC291AB19200FB090F /* LaunchScreen.storyboard */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEAAEAA6291AB18F00FB090F /* ViewController.swift in Sources */,
+				CEAAEAA6291AB18F00FB090F /* Calculate.swift in Sources */,
 				CEAAEAA2291AB18F00FB090F /* AppDelegate.swift in Sources */,
 				CEAAEAA4291AB18F00FB090F /* SceneDelegate.swift in Sources */,
 			);
@@ -291,6 +291,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = calculator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Calculator;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -305,7 +306,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,6 +319,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = calculator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Calculator;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -332,7 +334,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
