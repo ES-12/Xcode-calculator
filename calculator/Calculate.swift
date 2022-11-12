@@ -50,7 +50,7 @@ class Calculate: UIViewController {
         firstNumber = ""
         secondNumber = ""
         operand = ""
-        outlineLabel.text = "cleaned"
+        outlineLabel.text = ""
         outlineLabelNumber1.text = ""
         outlineLabelNumber2.text = ""
         outlineLabelOperand.text = ""
@@ -83,7 +83,14 @@ class Calculate: UIViewController {
     }
     
     func showResult(number: Double) {
-        if number.truncatingRemainder(dividingBy: 1.0) == 0.0 {
+        if String(number) == "inf" {
+            firstNumber = ""
+            secondNumber = ""
+            outlineLabelNumber1.text = ""
+            outlineLabelNumber2.text = ""
+            outlineLabelOperand.text = ""
+            return outlineLabel.text = "inf"
+        } else if number.truncatingRemainder(dividingBy: 1.0) == 0.0 {
             outlineLabel.text = String(Int(number))
             firstNumber = outlineLabel.text!
             outlineLabelNumber1.text = firstNumber
