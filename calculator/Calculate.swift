@@ -9,19 +9,23 @@ import UIKit
 
 class Calculate: UIViewController {
     
+    //display data output
     @IBOutlet weak var outlineLabel: UILabel!
     @IBOutlet weak var outlineLabelNumber1: UILabel!
     @IBOutlet weak var outlineLabelNumber2: UILabel!
     @IBOutlet weak var outlineLabelOperand: UILabel!
     
+    //data storage
     var firstNumber: String = ""
     var secondNumber: String = ""
     var operand: String = ""
     
+    //getting data from 1-9 buttons
     @IBAction func digitalTapped(_ sender: UIButton) {
         addNumber(number: (sender.titleLabel?.text)!)
     }
     
+    //input of numbers
     func addNumber (number: String) {
         if operand.isEmpty {
             firstNumber += number
@@ -38,6 +42,7 @@ class Calculate: UIViewController {
         }
     }
     
+    //input of operand
     @IBAction func operandAction(_ sender: UIButton) {
         if !firstNumber.isEmpty {
             operand = (sender.titleLabel?.text)!
@@ -46,6 +51,7 @@ class Calculate: UIViewController {
         } else { return outlineLabel.text = "enter 1st number"}
     }
     
+    // data cleaning
     @IBAction func clearCalculateAction(_ sender: UIButton) {
         firstNumber = ""
         secondNumber = ""
@@ -56,6 +62,7 @@ class Calculate: UIViewController {
         outlineLabelOperand.text = ""
     }
     
+    //calculation and output of result
     @IBAction func resultAction(_ sender: UIButton) {
         var result: Double = 0.0
         switch operand {
@@ -82,6 +89,8 @@ class Calculate: UIViewController {
         showResult(number: result)
     }
     
+    //converting the into string and copying the result
+    //in data storage->firstNumber
     func showResult(number: Double) {
         if String(number) == "inf" {
             firstNumber = ""
